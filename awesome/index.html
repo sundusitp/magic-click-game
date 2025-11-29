@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Mini Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="gradient-text">Catch the Magic Logo! ✨</h1>
+    <p class="gradient-text subtitle">Click the logo as many times as you can!</p>
+
+    <div class="stats">
+      <div class="gradient-text">Score: <span id="score">0</span></div>
+      <div class="gradient-text">Time left: <span id="countdown">10</span>s</div>
+      <div class="gradient-text">Level: <span id="level">1</span></div>
+    </div>
+
+    <button id="startBtn" class="start-btn">Start Game</button>
+  </header>
+
+  <main>
+    <div class="game-area">
+
+      <!-- Magic Button as Logo -->
+      <button id="magicBtn" class="magic-btn">
+        <img src="img/mu.jpeg" alt="Magic Logo" class="magic-logo">
+      </button>
+
+      <!-- Level Up -->
+      <div id="levelUpMsg" class="gradient-text level-up-msg">LEVEL UP! 🎉</div>
+    </div>
+  </main>
+
+  <footer style="margin-top: 550px;">
+    <p class="gradient-text footer-text">Mini Game with Max CSS & Minimal JS</p>
+  </footer>
+
+  <!-- Audio files -->
+  <audio id="clickSound" src="sounds/click.mp3"></audio>
+  <audio id="levelUpSound" src="sounds/levelup.mp3"></audio>
+  <audio id="gameOverSound" src="sounds/gameover.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
